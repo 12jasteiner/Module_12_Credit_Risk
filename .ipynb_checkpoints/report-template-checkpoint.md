@@ -15,17 +15,21 @@ In this section, describe the analysis you completed for the machine learning mo
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
+  * Accuracy= 0.95
+  * Precision_healthy= 1.00 ; precision_high-risk= 0.85
+  * Recall_healthy= 0.99 ; recall_high-risk= 0.91
 
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * Accuracy= 0.99
+  * Precision_healthy= 1.00 ; precision_high-risk= 0.84
+  * Recall_healthy= 0.99 ; recall_high-risk= 0.99
 
 ## Summary
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
+* Machine learning model 2, which used the resampled data, performed better. This improved performance is evidenced by a higher balanced accuracy score and 
+Which one seems to perform best? How do you know it performs best?
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
 
 If you do not recommend any of the models, please justify your reasoning.
