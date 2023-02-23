@@ -4,11 +4,11 @@
 
 In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+* The purpose of this analysis was to determine the accuracy of a logistic regression model when using original data with a class imbalance compared with resampled (oversampled minority class) data.
+* Loan lending data including: loan size, interest rate, debt-to-income ratio, etc. was used to predict if a potential borrower would default on their loan.
+* These models were used to predict loan status (high-risk vs healthy).
+* For this analysis we created/instanciated logistic regression models using separated training and test data. The models were fit to the training data and predictions were created. These predictions were evaluated against the test data to determine their recall/sensitivity, precision, F1 score, and other metrics useful in evaluating the model's relevence.
+* Logistic regression was used to model the target (loan status). This model was used with original lending data and then again with resampled data (oversampled minority class) to acheive a more appropriately trained model. 
 
 ## Results
 
