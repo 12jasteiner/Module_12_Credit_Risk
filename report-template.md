@@ -4,10 +4,10 @@
 
 In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
 
-* The purpose of this analysis was to determine the accuracy of a logistic regression model when using original data with a class imbalance compared with resampled (oversampled minority class) data.
+* The purpose of this analysis was to determine the accuracy of a logistic regression model when using original data with a class imbalance compared with a logistic regression model using resampled (oversampled minority class) data.
 * Loan lending data including: loan size, interest rate, debt-to-income ratio, etc. was used to predict if a potential borrower would default on their loan.
 * These models were used to predict loan status (high-risk vs healthy).
-* For this analysis we created/instanciated logistic regression models using separated training and test data. The models were fit to the training data and predictions were created. These predictions were evaluated against the test data to determine their recall/sensitivity, precision, F1 score, and other metrics useful in evaluating the model's relevence.
+* For this analysis we created/instanciated logistic regression models using separated training and test data. The models were fit to the training data and predictions were created. These predictions were evaluated against the test data to determine their accuracy, recall/sensitivity, precision, F1 score, and other metrics useful in evaluating the model's relevence.
 * Logistic regression was used to model the target (loan status). This model was used with original lending data and then again with resampled data (oversampled minority class) to acheive a more appropriately trained model. 
 
 ## Results
@@ -27,9 +27,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Machine learning model 2, which used the resampled data, performed better. This improved performance is evidenced by a higher balanced accuracy score and 
-Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
 
-If you do not recommend any of the models, please justify your reasoning.
+* Machine learning model 2, which used the resampled data, performed better. This improved performance is evidenced by a higher balanced accuracy score (higher rate of correct true positive and true negative predictions) and improved recall/sensitivity (fewer false negatives- ie high risk categorized as healthy). 
+* Though the second model (resampled data) was unable to improve the precision for the high-risk (1) loan predictions, it performed better in the more relevant categories of accuracy and recall. The 0.84 precision for high-risk loans seen in model 2 indicates that there was a 16% false positive rate. In this situation that would mean that 16% of healthy individuals were categorized as high risk. Thus, this model would deny some individuals who should be approved for a loan. However, this is a small casualty to pay for approving fewer individuals who are high-risk/likely to default on their loans. Assuming the company administering the loans is willing to accept that some healthy individuals will be denied loans due to being categorized as false positives for being high-risk the second model with the resampled data would be adequate.
+
